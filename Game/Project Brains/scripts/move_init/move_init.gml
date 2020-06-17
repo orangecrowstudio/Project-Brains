@@ -1,0 +1,1 @@
+globalvar MOVESPD; MOVESPD = 60;
