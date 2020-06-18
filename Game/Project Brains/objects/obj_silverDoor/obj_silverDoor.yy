@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_silverDoor",
     "eventList": [
-        
+        {
+            "id": "65de0660-5345-4440-bdff-5333c04964c2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "1e27b246-ccf6-4f21-9da5-dc1825a49b29"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
