@@ -5,27 +5,39 @@
 //Check if moving
 moveCheck = true;
 
+
 if overMoveDownCheck {
-	overMoveDownCheck = false;
-	moveCheck = false;
-	move_down();
+	if y+64 < room_height {
+		overMoveDownCheck = false;
+		moveCheck = false;
+		move_down();
+	}else overMoveDownCheck = false;
 }
+
 
 if overMoveUpCheck {
-	overMoveUpCheck = false;
-	moveCheck = false;
-	move_up();
+	if y > 0 {
+		overMoveUpCheck = false;
+		moveCheck = false;
+		move_up();
+	}else overMoveUpCheck = false;
 }
+
 
 if overMoveLeftCheck {
-	overMoveLeftCheck = false;
-	moveCheck = false;
-	move_left();
+	if x > 0 {
+		overMoveLeftCheck = false;
+		moveCheck = false;
+		move_left();
+	}else overMoveLeftCheck = false;
 }
 
+
 if overMoveRightCheck {
-	overMoveRightCheck = false;
-	moveCheck = false;
-	move_right();
+	if x+64 < room_width {
+		overMoveRightCheck = false;
+		moveCheck = false;
+		move_right();
+	}else overMoveRightCheck = false;
 }
 #endregion

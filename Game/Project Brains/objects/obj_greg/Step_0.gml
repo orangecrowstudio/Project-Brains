@@ -11,7 +11,10 @@ if place_free(x,y+64) and y+64 < room_height {
 			moveCheck = false;
 			move_down();
 		}else {
-			overMoveDownCheck = true;
+			overMoveDownCheck	= true;
+			overMoveUpCheck		= false;
+			overMoveLeftCheck	= false;
+			overMoveRightCheck	= false;
 		}
 	}
 }
@@ -23,7 +26,10 @@ if place_free(x,y-64) and y > 0 {
 			moveCheck = false;
 			move_up();
 		}else {
-			overMoveUpCheck = true;
+			overMoveDownCheck	= false;
+			overMoveUpCheck		= true;
+			overMoveLeftCheck	= false;
+			overMoveRightCheck	= false;
 		}
 	}
 }
@@ -35,7 +41,10 @@ if place_free(x-64,y) and x > 0 {
 			moveCheck = false;
 			move_left();
 		}else {
-			overMoveLeftCheck = true;
+			overMoveDownCheck	= false;
+			overMoveUpCheck		= false;
+			overMoveLeftCheck	= true;
+			overMoveRightCheck	= false;
 		}
 	}
 }
@@ -47,7 +56,10 @@ if place_free(x+64,y) and x+64 < room_width {
 			moveCheck = false;
 			move_right();
 		}else {
-			overMoveRightCheck = true;
+			overMoveDownCheck	= false;
+			overMoveUpCheck		= false;
+			overMoveLeftCheck	= false;
+			overMoveRightCheck	= true;
 		}
 	}
 }
